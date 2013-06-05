@@ -17,6 +17,9 @@ int main(int argc, char *argv[])
     };
 
     int j = argc - 1;
+    if(j > 3) {
+      j = 3;
+    }
     while(j > 0) {
         states[argc - j - 1] = argv[argc - j];
         j--;
