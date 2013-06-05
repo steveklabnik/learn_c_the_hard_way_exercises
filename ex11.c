@@ -16,6 +16,12 @@ int main(int argc, char *argv[])
         "Washington", "Texas"
     };
 
+    int j = argc - 1;
+    while(j > 0) {
+        states[argc - j - 1] = argv[argc - j];
+        j--;
+    }
+
     i = 3;  // watch for this
     while(i > -1) {
         printf("state %d: %s\n", 3 - i, states[3 - i]);
